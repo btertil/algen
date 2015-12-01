@@ -427,7 +427,7 @@ int main (int argc, char **argv) {
 	
 	
 	if (argc < 3) {
-	   printf("\n[!] USAGE: %s <filename.csv> <liczba pokoleń>\n", argv[0]);
+	   printf("\n[!] USAGE: %s <filename.csv> <liczba pokoleń>\n\n", argv[0]);
 	   exit(1);
 	}
 	
@@ -440,7 +440,7 @@ int main (int argc, char **argv) {
 	
 	generations = atoi(argv[2]);
 	if (generations < minpok) {
-		printf("\n[!] Populacja powinna ewoluować co najmniej przez %d pokoleń\n", minpok);
+		printf("\n[!] Populacja powinna ewoluować co najmniej przez %d pokoleń\n\n", minpok);
 		exit(4);
 	}
 	
