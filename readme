@@ -1,0 +1,1 @@
+To compile under Linux: algen.c -o algen -pthread -lm
