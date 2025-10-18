@@ -30,7 +30,7 @@
 //#define FORMULA (los/100000)+0.953290 // win
 //#define FORMULA (los/100000)+0.950200 // linux
 
-char mode[2];
+char mode[3];
 
 double formula_dz = 1;
 
