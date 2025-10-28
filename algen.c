@@ -23,13 +23,14 @@
 #endif
 
 
-#define POP 250
+#define POP 350
 #define POPF POP
 #define POPM POP
 
 //#define FORMULA (los/100000)+0.953290 // win
 //#define FORMULA (los/100000)+0.950200 // linux
 
+// 2 znaki + '0' byte
 char mode[3];
 
 double formula_dz = 1;
@@ -176,7 +177,9 @@ struct s_czlek * inicjacja(struct s_czlek *pSource, char GR) {
 double mutacja (double param) {
 	
 	double los, modifier;
-	
+
+
+	// zwraca liczbę losową 0 - 10000
 	los = (double) (rand()%10000+1);
 	modifier = FORMULA;
 	
