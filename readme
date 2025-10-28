@@ -1,1 +1,1 @@
-To compile under Linux: g++ algen.c -o algen -pthread -lm
+To compile under Linux: gcc algen.c -o algen -pthread -lm
